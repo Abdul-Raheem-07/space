@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExcW9oYjMycW50cm9vaHc3MDhteGRnejljOG51MGdibG9uNm5kMWdwcCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tL5HmgfZi0Qow/100.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+/* Logo Section */
+.logo {
+    margin-top:11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h2 {
+    font-family: 'Mozilla Headline', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #ffffff, #0b3d91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo h2:hover {
+    transform: scale(1.1);
+    letter-spacing: 5px;
+}
+
+/* Main Heading */
+.FRSTHeading {
+    font-family: 'Mozilla Headline', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2rem;
+    margin-top: 2%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.FRSTHeading:hover {
+    transform: scale(1.1);
+}
+
+/* Underline on hover */
+.underline {
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.FRSTHeading:hover .underline {
+    text-decoration: underline;
+}
+
+/* Buttons */
+#button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(30vh - 50px);
+}
+
+#apply-button, #learn-more-button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    background-color: #0b3d91;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#apply-button:hover, #learn-more-button:hover {
+    background-color: #062b61;
+    transform: scale(1.1);
+}
+
+#learn-more-button {
+    margin-left: 20px;
+}
+
+/* Footer Heading */
+#lastheading {
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+#lastheading:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    color: aliceblue;
+}
